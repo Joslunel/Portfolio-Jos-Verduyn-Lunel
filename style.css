@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --header-bg-color: hsl(211, 24%, 24%);
+  --header-text-color: #f6f6f4;
+  --section-bg-color: #979fa5;
+  --section-text-color: #edeae5;
+  --table-bg-color: #ced9dd;
+  --aside-bg-color: #ced9dd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  width: 400px;
+  margin: auto;
+  /* text-align: justify; */
+}
+.header-intro,
+.footer {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+}
+.header-intro a {
+  color: var(--header-text-color);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-image {
+  display: block;
+  width: 300px;
+  margin: auto;
+  border-radius: 25%;
+}
+.header-link {
+  display: inline;
+}
+h1,
+p,
+h2,
+.wrapper-link {
+  /* margin: auto; */
+  padding: 10px 0px 10px 0px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.wrapper-link a:hover {
+  color: #979fa5;
+}
+.current-projects,
+h3 {
+  background-color: var(--section-bg-color);
+  color: var(--section-text-color);
+  text-align: center;
+}
+.current-projects a {
+  text-decoration: none;
+  color: #edeae5;
+}
+.current-projects a:hover {
+  color: var(--header-bg-color);
+}
+.current-projects h3 {
+  color: var(--header-bg-color);
+  padding: 40px;
+}
+.current-level,
+td {
+  background-color: var(--header-bg-color);
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact-field {
+  width: 400px;
+  margin: auto;
+  background-color: var(--header-bg-color);
+  border-radius: 5px;
+}
+.input-field {
+  padding: 10px;
+}
+.past-projects {
+  margin: auto;
+  background-color: var(--aside-bg-color);
+  padding: 40px;
+}
+.past-projects h3 {
+  background-color: var(--aside-bg-color);
+  color: var(--header-bg-color);
+  text-align: center;
+}
+.past-projects p {
+  color: var(--section-bg-color);
+}
+.past-projects a {
+  text-decoration: none;
+  color: var(--section-bg-color);
+}
+.past-projects h3 {
+  padding: 40px;
+}
+.link-video {
+  text-align: center;
+  list-style: none;
+}
+.past-projects li {
+  padding: 5px;
+}
+.past-projects a:hover {
+  color: var(--header-bg-color);
+}
+footer {
+  padding: 40px;
+}
