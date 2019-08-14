@@ -118,14 +118,34 @@ body {
   padding: 1vw 2vw 4vw 2vw;
   background-color: #f4f4f4;
   border-radius: 5%;
-  
+  position: relative;
 }
 .work-item img {
   width: 100%;
   display: block;
- 
 }
-.work-items video {
-  width: 100%;
-  display: block;
+.work-item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #000000;
+  margin: 0 auto 1vw 1vw;
+}
+.work-item-text h4,
+.work-item-text p {
+  margin: 0;
+}
+
+/* footer */
+.about-me {
+  background-color: #252525;
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.about-me-items {
+  color: #ffffff;
+  width: 40vw;
+  margin: 3vw;
 }
