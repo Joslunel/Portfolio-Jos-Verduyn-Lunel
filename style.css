@@ -20,14 +20,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* navbar */
 
 .links {
   background: #f4f4f4;
   display: flex;
   width: 100vw;
-
-  /* height: 4rem; */
 }
 .link-items {
   margin: 0 auto;
@@ -40,18 +39,13 @@ body {
 .link-items a:hover {
   color: #687988;
 }
-/* intro */
 
-/* .intro {
-  position: relative;
-} */
 .intro {
   display: flex;
   flex-flow: column nowrap;
   background-image: url(images/IMG_20190812_Jos.jpg);
   background-size: 100% auto;
   align-items: flex-end;
-  /* padding: 9rem 3rem 15rem 0; */
 }
 .intro-items {
   display: flex;
@@ -83,17 +77,16 @@ body {
   line-height: 1.5vw;
 }
 
+/* work */
+
 .work {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  /* background: #f4f4f4; */
   background-image: url(images/IMG_20190813_105014_copy.jpg);
 }
 
 .work-items {
-  /* background-image: url(images/IMG_20190813_105014_copy.jpg); */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -115,10 +108,26 @@ body {
 
 .work-item {
   width: 27vw;
-  padding: 1vw 2vw 4vw 2vw;
+  padding: 1vw 2vw 2vw 2vw;
   background-color: #f4f4f4;
   border-radius: 5%;
   position: relative;
+  transition: all 1s ease-in-out;
+}
+.work-item:after {
+  opacity: 0;
+  transition: opacity ease-in-out 1s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.7)
+  );
+  border-radius: 5%;
 }
 .work-item img {
   width: 100%;
@@ -126,17 +135,30 @@ body {
 }
 .work-item-text {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 2vw;
+  left: 2vw;
   color: #000000;
   margin: 0 auto 1vw 1vw;
+  z-index: 1;
+  opacity: 0;
+  transition: all ease-in-out 1s;
 }
 .work-item-text h4,
 .work-item-text p {
   margin: 0;
 }
+.work-item:hover .work-item-text {
+  opacity: 1;
+}
+.work-item:hover {
+  transform: scale(1.05);
+}
+.work-item:hover:after {
+  opacity: 1;
+}
 
 /* footer */
+
 .about-me {
   background-color: #252525;
   width: 100vw;
