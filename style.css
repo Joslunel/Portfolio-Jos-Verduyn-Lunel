@@ -1,120 +1,131 @@
-* {
+html {
   box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --white: #ffffff;
+  --middle-grey: #868686;
+  --dark-grey: #252525;
+  --black: #000000;
+  font-family: "Roboto", sans-serif;
+}
+body {
   margin: 0;
   padding: 0;
 }
-:root {
-  --header-bg-color: hsl(211, 24%, 24%);
-  --header-text-color: #f6f6f4;
-  --section-bg-color: #979fa5;
-  --section-text-color: #edeae5;
-  --table-bg-color: #ced9dd;
-  --aside-bg-color: #ced9dd;
+/* navbar */
+
+.links {
+  background: #f4f4f4;
+  display: flex;
+  width: 100vw;
+
+  /* height: 4rem; */
+}
+.link-items {
+  margin: 0 auto;
+  padding: 2rem;
+}
+.link-items a {
+  color: #868686;
+  margin: 0 1rem;
+}
+.link-items a:hover {
+  color: #687988;
+}
+/* intro */
+
+/* .intro {
+  position: relative;
+} */
+.intro {
+  display: flex;
+  flex-flow: column nowrap;
+  background-image: url(images/IMG_20190812_Jos.jpg);
+  background-size: 100% auto;
+  align-items: flex-end;
+  /* padding: 9rem 3rem 15rem 0; */
+}
+.intro-items {
+  display: flex;
+  flex-flow: column;
+  align-content: flex-start;
+  margin: 19vw 4vw 10vw 0;
+}
+.intro-text {
+  width: 25vw;
+  color: #f4f4f4;
+  line-height: 1.3rem;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+.intro-title {
+  color: #f4f4f4;
 }
-p {
-  width: 400px;
-  margin: auto;
-  /* text-align: justify; */
+.intro-title h1 {
+  font-size: 4vw;
+  margin: 0;
 }
-.header-intro,
-.footer {
-  background-color: var(--header-bg-color);
-  color: var(--header-text-color);
+.intro-title p {
+  font-size: 1.5vw;
+  margin: 0;
 }
-.header-intro a {
-  color: var(--header-text-color);
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
+
+.intro-text p {
+  padding: 0 2rem 0 0;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
 }
-.header-image {
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  /* background: #f4f4f4; */
+  background-image: url(images/IMG_20190813_105014_copy.jpg);
+}
+
+.work-items {
+  /* background-image: url(images/IMG_20190813_105014_copy.jpg); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 3vw auto;
+  grid-gap: 2rem;
+}
+
+.work-title {
+  width: 100vw;
+  background: #f4f4f4;
+}
+.work-title h2 {
+  color: #252525;
+  padding: 2vw;
+  font-size: 3vw;
+  margin: 0;
+  text-align: center;
+}
+
+.work-item {
+  width: 27vw;
+  padding: 1vw 2vw 4vw 2vw;
+  background-color: #f4f4f4;
+  border-radius: 5%;
+  
+}
+.work-item img {
+  width: 100%;
   display: block;
-  width: 300px;
-  margin: auto;
-  border-radius: 25%;
+ 
 }
-.header-link {
-  display: inline;
-}
-h1,
-p,
-h2,
-.wrapper-link {
-  /* margin: auto; */
-  padding: 10px 0px 10px 0px;
-  line-height: 1.5rem;
-  text-align: center;
-}
-.wrapper-link a:hover {
-  color: #979fa5;
-}
-.current-projects,
-h3 {
-  background-color: var(--section-bg-color);
-  color: var(--section-text-color);
-  text-align: center;
-}
-.current-projects a {
-  text-decoration: none;
-  color: #edeae5;
-}
-.current-projects a:hover {
-  color: var(--header-bg-color);
-}
-.current-projects h3 {
-  color: var(--header-bg-color);
-  padding: 40px;
-}
-.current-level,
-td {
-  background-color: var(--header-bg-color);
-  margin: auto;
-  padding: 10px;
-  border-radius: 5px;
-}
-.contact-field {
-  width: 400px;
-  margin: auto;
-  background-color: var(--header-bg-color);
-  border-radius: 5px;
-}
-.input-field {
-  padding: 10px;
-}
-.past-projects {
-  margin: auto;
-  background-color: var(--aside-bg-color);
-  padding: 40px;
-}
-.past-projects h3 {
-  background-color: var(--aside-bg-color);
-  color: var(--header-bg-color);
-  text-align: center;
-}
-.past-projects p {
-  color: var(--section-bg-color);
-}
-.past-projects a {
-  text-decoration: none;
-  color: var(--section-bg-color);
-}
-.past-projects h3 {
-  padding: 40px;
-}
-.link-video {
-  text-align: center;
-  list-style: none;
-}
-.past-projects li {
-  padding: 5px;
-}
-.past-projects a:hover {
-  color: var(--header-bg-color);
-}
-footer {
-  padding: 40px;
+.work-items video {
+  width: 100%;
+  display: block;
 }
