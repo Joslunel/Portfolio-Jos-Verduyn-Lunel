@@ -100,7 +100,7 @@ body {
 }
 .work-title h2 {
   color: #252525;
-  padding: 2vw;
+  padding: 4vw;
   font-size: 3vw;
   margin: 0;
   text-align: center;
@@ -171,4 +171,23 @@ body {
   color: #ffffff;
   width: 40vw;
   margin: 3vw;
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  .work-items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .work-item {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .work-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .work-item {
+    width: 80vw;
+  }
 }
