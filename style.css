@@ -180,6 +180,14 @@ body {
   .work-item {
     width: 40vw;
   }
+  .intro-text {
+    width: 50vw;
+  }
+  .intro-text p {
+    padding: 0 1vw 0 0;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+  }
 }
 
 @media (max-width: 700px) {
@@ -189,5 +197,13 @@ body {
   }
   .work-item {
     width: 80vw;
+  }
+  .intro-text {
+    width: 50vw;
+  }
+  .intro-text p {
+    padding: 0 1vw 0 0;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
   }
 }
